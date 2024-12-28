@@ -1,10 +1,35 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 
 export function ContactForm() {
+  const [isSubmitted, setIsSubmitted] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const form = e.target as HTMLFormElement
+    
+    try {
+      const response = await fetch('https://formspree.io/f/movvdner', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+
+      if (response.ok) {
+        setIsSubmitted(true)
+        form.reset()
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+    }
+  }
+
   return (
     <form
-      action="https://formspree.io/f/movvdner"
-      method="POST"
+      onSubmit={handleSubmit}
       className="space-y-6"
     >
       <div>
@@ -77,9 +102,10 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-dark transition-colors"
+        disabled={isSubmitted}
+        className="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-dark transition-colors disabled:bg-green-600 disabled:cursor-not-allowed"
       >
-        Send Message
+        {isSubmitted ? 'Sent!' : 'Send Message'}
       </button>
     </form>
   )
