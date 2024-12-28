@@ -26,35 +26,7 @@ export default function ContactPage() {
 
       <section className="py-16">
         <div className="container-padding mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            <ContactForm />
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Why Choose Us?</h2>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Local Expertise</h3>
-                  <p className="text-gray-600">
-                    Based in Miami, we understand the unique needs of local businesses 
-                    and provide personalized solutions.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">24/7 Support</h3>
-                  <p className="text-gray-600">
-                    Our team is always available to ensure your vending machines 
-                    run smoothly.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-2">Free Installation</h3>
-                  <p className="text-gray-600">
-                    We handle all aspects of installation and maintenance at no 
-                    cost to you.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ContactForm />
         </div>
       </section>
     </>
