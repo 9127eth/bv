@@ -1,0 +1,82 @@
+I am starting a vending company business. It is called Biscayne Vending and I already created the root folder. I want to use react native
+
+General Rules
+You are an expert in TypeScript, Node.js, Next.js App Router, React, and firebase.
+
+This is my first coding project so you will need to be specific on what code needs to go where and change the code for me.
+
+Code Style and Structure
+
+	•	Write concise, technically sound TypeScript code, with accurate examples where necessary.
+	•	Follow functional and declarative programming patterns; avoid classes and imperative code unless absolutely necessary.
+	•	Prefer modularization and reuse of code over duplication, making the app more maintainable.
+	•	Use descriptive variable names with auxiliary verbs like isLoading, hasError, shouldFetch, etc.
+	•	Structure files in an intuitive way:
+	•	Main component
+	•	Subcomponents
+	•	Helper functions or utilities
+	•	Static content (e.g., images, constants)
+	•	Type definitions (interfaces, types).
+
+Naming Conventions
+
+	•	Use lowercase with dashes for directory names (e.g., components/auth-wizard).
+	•	Prefer named exports over default exports for easier refactoring and tree shaking, making components easier to track across the project.
+
+TypeScript Usage
+
+	•	Write TypeScript for all code, leveraging type safety to catch potential errors early.
+	•	Prefer interfaces over types unless union types or more complex compositions are needed (interfaces are better for object shapes and extending).
+	•	Avoid using enums, instead opt for maps or string literal types for better flexibility and performance.
+	•	Always use functional components, strongly typed with TypeScript interfaces for props.
+
+Syntax and Formatting
+
+	•	Use the function keyword for pure functions, particularly for utilities or helper functions.
+	•	Simplify conditionals: Avoid unnecessary curly braces where concise syntax (like inline ternaries or logical operators) can improve readability. However, ensure readability is never sacrificed for brevity.
+	•	Keep JSX declarative and expressive, favoring simplicity and clarity over cleverness.
+
+Performance Optimization
+
+	•	Optimize image handling:
+	•	Use WebP format for improved performance.
+	•	Always include size data (width and height) in image elements to prevent layout shifts (especially important for mobile performance).
+	•	Implement lazy loading for images and other heavy content, using either native lazy loading (loading="lazy") or React libraries such as react-lazyload or IntersectionObserver.
+Performance OptimizationImplement caching strategies for frequently accessed data
+Optimize database queries for faster retrieval
+Consider using a CDN for static assets
+
+Logging rules:
+Here is my rule of thumb: "Log what you'd need to debug the issue if you were woken up at 3 AM, but not more."
+Use best practices when making logs, high signal low noise, should provide value without being overly verbose.
+
+This guideline encourages thoughtful logging practices. 
+Log critical errors: Always log errors that could crash the application or severely impact functionality.
+Log unexpected behaviors: If something happens that shouldn't, it's worth logging.
+Avoid logging normal operations: Don't log routine, or expected behaviors.
+Use log levels: Implement DEBUG, INFO, WARN, ERROR levels to categorize logs.
+Be selective: Log the most relevant information that would help diagnose issues quickly.
+Consider the context: Include enough contextual data to understand the error's circumstances.
+Think about actionability: If you can't act on the information, it might not need to be logged.
+Review and refine: Periodically review logs to see if they're providing value or just noise.
+
+## Core Technologies
+- Frontend: next.js React
+- Backend: firebase
+- Authentication: firebase
+- Storage: Firebase backend/storage
+- Key Management: env variables for app keys and sercrets, Firebase for user ai keys if applicable
+- Payment Processing: Stripe
+- Deployment: GitHub and Vercel
+
+
+To start the project, I need to create a new react native project. And I want it to have a home page, a contact page, an about page, and a services page. We do not need to have a login or signup page for now. 
+
+In everything we do, we need to optimize for seo. Please use the best practices for seo.
+
+ The colors for my logo will be:
+ Blue primary color: #0057ff
+ Aqua secondary color (e.g. for button background): #def6f6
+ White will be the background color.
+
+ 
