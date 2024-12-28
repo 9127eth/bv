@@ -19,16 +19,16 @@ export function Header() {
         </Link>
         
         <div className="hidden md:flex space-x-12 mx-auto">
-          <Link href="/" className="text-gray-700 hover:text-primary text-lg">
+          <Link href="/" className="text-body text-gray-700 hover:text-primary">
             Home
           </Link>
-          <Link href="/about" className="text-gray-700 hover:text-primary text-lg">
+          <Link href="/about" className="text-body text-gray-700 hover:text-primary">
             About
           </Link>
-          <Link href="/services" className="text-gray-700 hover:text-primary text-lg">
+          <Link href="/services" className="text-body text-gray-700 hover:text-primary">
             Services
           </Link>
-          <Link href="/contact" className="text-gray-700 hover:text-primary text-lg">
+          <Link href="/contact" className="text-body text-gray-700 hover:text-primary">
             Contact
           </Link>
         </div>

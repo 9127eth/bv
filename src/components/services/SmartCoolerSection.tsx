@@ -42,8 +42,8 @@ export function SmartCoolerSection() {
             />
           </div>
           <div>
-            <h2 className="text-4xl font-bold mb-6">AI-Powered Smart Coolers</h2>
-            <p className="text-xl text-gray-600 mb-12">
+            <h2 className="text-section-mobile md:text-section font-bold mb-6">AI-Powered Smart Coolers</h2>
+            <p className="text-body-large text-gray-600 mb-12">
               Step into the future of vending with our revolutionary smart coolers. 
               Powered by advanced AI technology, these machines offer a seamless, 
               contactless experience while providing valuable insights into your 
@@ -51,15 +51,15 @@ export function SmartCoolerSection() {
             </p>
 
             <div className="bg-gray-100 rounded-3xl p-8">
-              <h3 className="text-2xl font-semibold mb-8 text-center">How It Works</h3>
+              <h3 className="text-subsection-mobile md:text-subsection font-semibold mb-8 text-center">How It Works</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {steps.map((step, index) => (
                   <div key={step.title} className="text-center relative">
                     <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 shadow-sm">
                       <step.icon className="w-6 h-6 text-primary" />
                     </div>
-                    <h4 className="font-semibold mb-2">{step.title}</h4>
-                    <p className="text-gray-600 text-sm">{step.description}</p>
+                    <h4 className="text-body-large font-semibold mb-2">{step.title}</h4>
+                    <p className="text-body text-gray-600">{step.description}</p>
                     {index < steps.length - 1 && (
                       <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
                         <span className="text-primary">→</span>
@@ -73,7 +73,7 @@ export function SmartCoolerSection() {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl font-semibold mb-8 text-center">Smart Benefits</h3>
+          <h3 className="text-subsection-mobile md:text-subsection font-semibold mb-8 text-center">Smart Benefits</h3>
           <div className="flex flex-wrap justify-center gap-6">
             {benefits.map((benefit) => (
               <div 
@@ -81,7 +81,7 @@ export function SmartCoolerSection() {
                 className="flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-sm"
               >
                 <Check className="text-primary w-5 h-5 flex-shrink-0" />
-                <span className="text-gray-600 whitespace-nowrap">{benefit}</span>
+                <span className="text-body text-gray-600 whitespace-nowrap">{benefit}</span>
               </div>
             ))}
           </div>

@@ -6,10 +6,10 @@ export function HeroSection() {
     <section className="bg-primary py-20">
       <div className="container-padding mx-auto">
         <div className="max-w-2xl text-white">
-          <h1 className="text-5xl font-bold mb-6">
+          <h1 className="text-hero-mobile md:text-hero font-bold mb-6">
             AI-Powered Smart Cooler Vending
           </h1>
-          <p className="text-xl mb-8">
+          <p className="text-body-large mb-8">
             Experience the future of vending with our AI-enabled smart coolers. Tap, take, and go - no maintenance, no hassle.
           </p>
           <Link 

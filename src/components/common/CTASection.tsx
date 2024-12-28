@@ -5,10 +5,10 @@ export function CTASection() {
   return (
     <section className="bg-primary py-20 text-white">
       <div className="container-padding mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">
+        <h2 className="text-section-mobile md:text-section font-bold mb-6">
           Ready to Revolutionize Your Vending Experience?
         </h2>
-        <p className="text-xl mb-8 max-w-2xl mx-auto">
+        <p className="text-body-large mb-8 max-w-2xl mx-auto">
           From AI-powered smart coolers to nostalgic candy machines, we have the perfect solution for your location.
         </p>
         <Link

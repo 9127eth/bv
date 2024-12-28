@@ -28,17 +28,17 @@ export function WhyChooseUs() {
   return (
     <section className="py-16">
       <div className="container-padding mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-20">Why choose us?</h2>
-        <div className="bg-gray-100 rounded-3xl p-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <h2 className="text-section-mobile md:text-section font-bold text-center mb-16">Why choose us?</h2>
+        <div className="bg-gray-100 rounded-3xl p-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {reasons.map((reason) => (
               <div key={reason.title} className="flex gap-6">
                 <div className="bg-white p-4 rounded-xl shadow-sm h-fit">
                   <reason.icon className="w-6 h-6 text-primary stroke-current" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">{reason.title}</h3>
-                  <p className="text-gray-600 text-lg">{reason.description}</p>
+                  <h3 className="text-body-large font-semibold mb-2">{reason.title}</h3>
+                  <p className="text-body text-gray-600">{reason.description}</p>
                 </div>
               </div>
             ))}
