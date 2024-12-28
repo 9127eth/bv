@@ -3,7 +3,6 @@ import { HeroSection } from '../components/common/HeroSection'
 import { generateMetadata } from '../lib/metadata'
 import { FeatureGrid } from '../components/common/FeatureGrid'
 import { WhyChooseUs } from '../components/common/WhyChooseUs'
-import { ProductGrid } from '../components/common/ProductGrid'
 import { CTASection } from '../components/common/CTASection'
 import { ClassicsSection } from '../components/common/ClassicsSection'
 
@@ -19,7 +18,6 @@ export default function HomePage() {
       <FeatureGrid />
       <WhyChooseUs />
       <ClassicsSection />
-      <ProductGrid />
       <CTASection />
     </>
   )

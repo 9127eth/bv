@@ -13,15 +13,15 @@ const classicProducts = [
     image: '/images/candy-dispenser.jpg',
   },
   {
-    title: 'Toy Capsule Machines',
-    description: 'Fun and exciting capsules for endless surprises',
+    title: 'Bouncy Balls and More',
+    description: 'Fun and exciting vending options that kids love',
     image: '/images/capsule-machine.jpg',
   },
 ]
 
 export function ClassicsSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="container-padding mx-auto">
         <h2 className="text-3xl font-bold text-center mb-4">We Love Classics Too!</h2>
         <p className="text-xl text-center text-gray-600 mb-16 max-w-2xl mx-auto">

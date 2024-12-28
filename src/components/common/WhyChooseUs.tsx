@@ -26,7 +26,7 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-24">
+    <section className="py-16">
       <div className="container-padding mx-auto">
         <h2 className="text-4xl font-bold text-center mb-20">Why choose us?</h2>
         <div className="bg-gray-100 rounded-3xl p-16">

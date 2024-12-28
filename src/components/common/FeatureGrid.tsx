@@ -26,7 +26,7 @@ const features = [
 
 export function FeatureGrid() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="container-padding mx-auto">
         <h2 className="text-3xl font-bold text-center mb-16">Our Features</h2>
         <div className="grid grid-cols-2 gap-8">
