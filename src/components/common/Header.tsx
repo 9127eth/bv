@@ -6,32 +6,33 @@ import { siteMetadata } from '../../lib/metadata'
 export function Header() {
   return (
     <header className="bg-white shadow-sm">
-      <nav className="container-padding mx-auto flex h-16 items-center justify-between">
+      <nav className="container-padding mx-auto flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo.png"
+            src="/newlogo.png"
             alt={siteMetadata.siteName}
-            width={225}
-            height={50}
+            width={350}
+            height={77}
             priority
             className="object-contain"
           />
         </Link>
         
-        <div className="hidden md:flex space-x-8">
-          <Link href="/" className="text-gray-700 hover:text-primary">
+        <div className="hidden md:flex space-x-12 mx-auto">
+          <Link href="/" className="text-gray-700 hover:text-primary text-lg">
             Home
           </Link>
-          <Link href="/about" className="text-gray-700 hover:text-primary">
+          <Link href="/about" className="text-gray-700 hover:text-primary text-lg">
             About
           </Link>
-          <Link href="/services" className="text-gray-700 hover:text-primary">
+          <Link href="/services" className="text-gray-700 hover:text-primary text-lg">
             Services
           </Link>
-          <Link href="/contact" className="text-gray-700 hover:text-primary">
+          <Link href="/contact" className="text-gray-700 hover:text-primary text-lg">
             Contact
           </Link>
         </div>
+        <div className="w-[350px]"></div>
       </nav>
     </header>
   )

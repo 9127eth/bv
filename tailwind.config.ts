@@ -15,6 +15,10 @@ const config: Config = {
       },
       backgroundColor: {
         'site-background': '#ffffff',
+      },
+      fontFamily: {
+        montserrat: ['var(--font-montserrat)', 'sans-serif'],
+        poppins: ['var(--font-poppins)', 'sans-serif'],
       }
     },
   },
