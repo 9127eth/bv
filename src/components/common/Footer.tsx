@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import { Facebook, Instagram } from 'react-feather'
+import { Facebook, Instagram, AtSign } from 'react-feather'
 import { siteMetadata } from '../../lib/metadata'
 
 const quickLinks = [
-  { name: 'Features', href: '/features' },
-  { name: 'Products', href: '/products' },
+  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/services' },
   { name: 'Contact', href: '/contact' },
 ]
 
@@ -23,8 +23,7 @@ const socialLinks = [
   { 
     name: 'Threads',
     href: 'https://threads.net/biscaynevending',
-    // Using Instagram icon for Threads since react-feather doesn't have a Threads icon
-    icon: Instagram,
+    icon: AtSign,
   },
 ]
 
@@ -37,7 +36,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">{siteMetadata.siteName}</h3>
             <p className="text-gray-400 mb-4">
-              Revolutionizing vending services with state-of-the-art AI machines and great market insight.
+                Providing Miami with Retro Charm and Modern Vending Convenience.
             </p>
           </div>
 
