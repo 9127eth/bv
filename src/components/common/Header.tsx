@@ -61,9 +61,9 @@ export function Header() {
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
-            <X className="h-6 w-6 text-gray-700" />
+            <X className="h-6 w-6 text-gray-700 dark:text-white" />
           ) : (
-            <Menu className="h-6 w-6 text-gray-700" />
+            <Menu className="h-6 w-6 text-gray-700 dark:text-white" />
           )}
         </button>
 
