@@ -75,17 +75,18 @@ export function SmartCoolerSection() {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-subsection-mobile md:text-subsection font-semibold mb-8 text-center">Smart Vending Benefits</h3>
+          <h3 className="text-subsection-mobile md:text-subsection font-semibold mb-8 text-center dark:text-white">
+            Smart Vending Benefits
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
-            {benefits.map((benefit) => (
-              <div 
-                key={benefit} 
-                className="flex items-center gap-3"
-              >
-                <Check className="text-primary w-5 h-5 flex-shrink-0" />
-                <span className="text-body text-gray-600">{benefit}</span>
-              </div>
-            ))}
+            <div className="space-y-4">
+              {benefits.map((benefit) => (
+                <div key={benefit} className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-300">{benefit}</span>
+                </div>
+              ))}
+            </div>
           </div>
           
           <div className="text-center">
