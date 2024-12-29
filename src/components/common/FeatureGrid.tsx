@@ -3,7 +3,7 @@ import { Box, Tool, Package, CreditCard } from 'react-feather'
 
 const features = [
   {
-    title: 'AI-Powered Smart Cooler',
+    title: 'AI-Powered Smart Vending Machines',
     description: 'Tap and open door, take items - only pay for what you take',
     icon: Box,
   },

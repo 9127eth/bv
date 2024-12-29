@@ -9,7 +9,7 @@ export function CTASection() {
           Ready to Revolutionize Your Vending Experience?
         </h2>
         <p className="text-body-large mb-8 max-w-2xl mx-auto">
-          From AI-powered smart coolers to nostalgic candy machines, we have the perfect solution for your location.
+          From AI-powered smart vending to nostalgic candy machines, we have the perfect solution for your location.
         </p>
         <Link
           href="/contact"

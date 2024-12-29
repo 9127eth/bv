@@ -34,8 +34,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">{siteMetadata.siteName}</h3>
-            <p className="text-gray-400 mb-4">
+            <h3 className="text-xl font-bold mb-4 pl-4">{siteMetadata.siteName}</h3>
+            <p className="text-gray-400 mb-4 pl-4">
                 Providing Miami with Retro Charm and Modern Vending Convenience.
             </p>
           </div>

@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 const products = [
   {
-    title: 'AI-Enabled Smart Coolers',
-    description: 'Our flagship smart coolers equipped with advanced sensors and AI technology',
+    title: 'AI-Enabled Smart Vending Machines',
+    description: 'Our flagship smart vending machines equipped with advanced sensors and AI technology',
     image: '/images/smart-cooler.jpg',
   },
   {

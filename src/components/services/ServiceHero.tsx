@@ -9,7 +9,7 @@ export function ServiceHero() {
             Vending Solutions for Every Space
           </h1>
           <p className="text-body-large">
-            Whether you're looking for cutting-edge AI-powered smart coolers or 
+            Whether you're looking for cutting-edge AI-powered smart vending or 
             charming nostalgic candy machines, we have the perfect vending solution 
             for your location. Experience the future of vending while preserving 
             the magic of traditional favorites.

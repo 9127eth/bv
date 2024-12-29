@@ -5,7 +5,7 @@ import { Check, CreditCard, LogIn, LogOut } from 'react-feather'
 const steps = [
   {
     title: 'Tap to Access',
-    description: 'Simply tap your card or mobile device to unlock the cooler',
+    description: 'Simply tap your card or mobile device to unlock the door',
     icon: CreditCard,
   },
   {
@@ -26,6 +26,7 @@ const benefits = [
   'Contactless payments for seamless transactions',
   'Compact footprint maximizes space efficiency',
   'Stock fresh meals, drinks, and items traditional machines can\'t handle',
+  'A more modern user experience compared to traditional vending machines',
 ]
 
 export function SmartCoolerSection() {
@@ -43,12 +44,12 @@ export function SmartCoolerSection() {
             />
           </div>
           <div>
-            <h2 className="text-section-mobile md:text-section font-bold mb-6">AI-Powered Smart Coolers</h2>
+            <h2 className="text-section-mobile md:text-section font-bold mb-6">AI-Powered Smart Vending Machines</h2>
             <p className="text-body-large text-gray-600 mb-12">
-              Step into the future of vending with our revolutionary smart coolers. 
+              Step into the future of vending with our revolutionary smart vending machines. 
               Powered by advanced AI technology, these machines offer a seamless, 
               contactless experience while providing valuable insights into your 
-              vending operations.
+              vending operations. Branding options available.
             </p>
 
             <div className="bg-gray-100 rounded-3xl p-8">
@@ -74,17 +75,26 @@ export function SmartCoolerSection() {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-subsection-mobile md:text-subsection font-semibold mb-8 text-center">Smart Benefits</h3>
-          <div className="flex flex-wrap justify-center gap-6">
+          <h3 className="text-subsection-mobile md:text-subsection font-semibold mb-8 text-center">Smart Vending Benefits</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto mb-12">
             {benefits.map((benefit) => (
               <div 
                 key={benefit} 
-                className="flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-sm"
+                className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm"
               >
                 <Check className="text-primary w-5 h-5 flex-shrink-0" />
-                <span className="text-body text-gray-600 whitespace-nowrap">{benefit}</span>
+                <span className="text-body text-gray-600">{benefit}</span>
               </div>
             ))}
+          </div>
+          
+          <div className="text-center">
+            <a 
+              href="/contact" 
+              className="inline-block bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-primary/90 transition-colors"
+            >
+              Get Started with Smart Vednding
+            </a>
           </div>
         </div>
       </div>
