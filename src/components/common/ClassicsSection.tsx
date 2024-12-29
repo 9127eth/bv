@@ -22,7 +22,7 @@ export function ClassicsSection() {
             />
           </div>
           <div>
-            <h2 className="text-section-mobile md:text-section font-bold mb-6">
+            <h2 className="text-section-mobile md:text-section font-bold mb-6 dark:text-white">
               We Love Classics Too!
             </h2>
             <p className="text-body-large text-gray-600 mb-6">
@@ -34,7 +34,7 @@ export function ClassicsSection() {
               Perfect for retail stores, family restaurants, entertainment venues, 
               and anywhere looking to add a touch of fun and nostalgia.
             </p>
-            <p className="text-body-large font-semibold mb-3">
+            <p className="text-body-large font-semibold mb-3 dark:text-white">
               Available Product Categories:
             </p>
             <div className="space-y-2">
