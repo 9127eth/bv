@@ -22,11 +22,11 @@ export function Header() {
           <Link href="/" className="text-body text-gray-700 hover:text-primary">
             Home
           </Link>
-          <Link href="/about" className="text-body text-gray-700 hover:text-primary">
-            About
-          </Link>
           <Link href="/services" className="text-body text-gray-700 hover:text-primary">
             Services
+          </Link>
+          <Link href="/about" className="text-body text-gray-700 hover:text-primary">
+            About
           </Link>
           <Link href="/contact" className="text-body text-gray-700 hover:text-primary">
             Contact

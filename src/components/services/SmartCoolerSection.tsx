@@ -33,12 +33,13 @@ export function SmartCoolerSection() {
     <section className="py-24">
       <div className="container-padding mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="relative h-[400px]">
+          <div className="relative h-[600px]">
             <Image
-              src="/images/smart-cooler-large.jpg"
-              alt="AI-Powered Smart Cooler"
+              src="/smartvend3.png"
+              alt="24H Smart Vending Machine"
               fill
-              className="object-cover rounded-lg"
+              className="object-contain"
+              priority
             />
           </div>
           <div>

@@ -4,7 +4,7 @@ export function ServiceHero() {
   return (
     <section className="bg-primary py-24">
       <div className="container-padding mx-auto">
-        <div className="max-w-3xl text-white">
+        <div className="max-w-3xl text-white pl-4 md:pl-8 lg:pl-12">
           <h1 className="text-hero-mobile md:text-hero font-bold mb-6">
             Vending Solutions for Every Space
           </h1>

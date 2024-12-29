@@ -12,7 +12,7 @@ export default function AboutPage() {
     <>
       <section className="bg-primary py-20">
         <div className="container-padding mx-auto">
-          <div className="max-w-2xl text-white">
+          <div className="max-w-2xl text-white pl-4 md:pl-8 lg:pl-12">
             <h1 className="text-hero-mobile md:text-hero font-bold mb-6">
               Our Story
             </h1>
@@ -38,11 +38,11 @@ export default function AboutPage() {
               <h2 className="text-section-mobile md:text-section font-bold mb-6">
                 Family Values, Modern Solutions
               </h2>
-              <p className="text-body-large text-gray-600 mb-4">
+              <p className="text-body text-gray-600 mb-6">
                 Founded right here in Miami, Biscayne Vending represents the perfect blend of family business values and cutting-edge technology. We understand the unique needs of our local community because we're part of it.
               </p>
-              <p className="text-body text-gray-600 mb-4">
-                Our journey began with a simple mission: to provide Miami businesses with reliable, innovative vending solutions that make life easier for both business owners and their customers.
+              <p className="text-body text-gray-600 mb-6">
+                Our journey began as a father-son venture, teaching a 4-year-old the fundamentals of business through the timeless appeal of vending machines. Our mission remains simple: providing Miami with retro charm and modern vending convenience that makes life easier for both business owners and their customers.
               </p>
               <p className="text-body text-gray-600">
                 Today, we're proud to serve locations along Biscayne Boulevard and throughout Miami, bringing the future of vending to businesses and communities across the city.

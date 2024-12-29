@@ -15,17 +15,17 @@ const machines = [
   {
     title: 'Candy Machines',
     description: 'Classic bulk candy dispensers perfect for M&Ms, Skittles, Reese\'s Pieces, and other favorite candies',
-    image: '/images/candy-dispenser.jpg',
+    image: '/gumballmachine1.jpg',
   },
   {
     title: 'Gumball Machines',
     description: 'Traditional spiral gumball machines for gumballs, jawbreakers, and round candy',
-    image: '/images/gumball-machine.jpg'
+    image: '/gumballmachine2.jpg'
   },
   {
     title: 'Toy Capsule Machines',
     description: 'Exciting capsule machines for toys, stickers, temporary tattoos, and small collectibles',
-    image: '/images/capsule-machine.jpg'
+    image: '/gumballmachine3.jpg'
   }
 ]
 
@@ -50,7 +50,8 @@ export function NostalgicSection() {
                   src={machine.image}
                   alt={machine.title}
                   fill
-                  className="object-cover"
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <div className="p-6">
