@@ -37,7 +37,7 @@ export function ContactForm() {
 
   return (
     <div className="grid md:grid-cols-2 gap-8">
-      <div className="bg-gray-100 rounded-3xl p-8 md:p-12">
+      <div className="bg-gray-100 dark:bg-gray-800 rounded-3xl p-8 md:p-12">
         <p className="text-gray-600 mb-8">
           Fill out the form below and we'll get back to you as soon as possible.
         </p>

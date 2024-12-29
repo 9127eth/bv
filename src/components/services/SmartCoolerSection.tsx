@@ -52,7 +52,7 @@ export function SmartCoolerSection() {
               vending operations. Branding options available.
             </p>
 
-            <div className="bg-gray-100 rounded-3xl p-8">
+            <div className="bg-gray-100 dark:bg-gray-800 rounded-3xl p-8">
               <h3 className="text-subsection-mobile md:text-subsection font-semibold mb-8 text-center">How It Works</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {steps.map((step, index) => (

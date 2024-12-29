@@ -11,8 +11,7 @@ export function ServiceHero() {
           <p className="text-body-large">
             Whether you're looking for cutting-edge AI-powered smart vending or 
             charming nostalgic candy machines, we have the perfect vending solution 
-            for your location. Experience the future of vending while preserving 
-            the magic of traditional favorites.
+            for your location.
           </p>
         </div>
       </div>

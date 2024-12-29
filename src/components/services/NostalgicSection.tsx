@@ -43,12 +43,12 @@ const commonFeatures = [
 
 export function NostalgicSection() {
   return (
-    <section className="py-24 bg-gray-100">
+    <section className="py-24 bg-gray-100 dark:bg-gray-800">
       <div className="container-padding mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-4xl font-bold mb-6">Nostalgic Favorites</h2>
-            <p className="text-xl text-gray-600 mb-12">
+            <h2 className="text-4xl font-bold mb-6 dark:text-white">Nostalgic Favorites</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-12">
               Add a touch of nostalgia to your location with our classic vending machines. 
               These time-tested favorites combine durability with simple operation, 
               generating steady revenue with minimal maintenance.
@@ -71,7 +71,7 @@ export function NostalgicSection() {
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl p-8 shadow-sm">
+          <div className="bg-white dark:bg-gray-700 rounded-3xl p-8 shadow-sm">
             <div className="relative h-[400px] mb-12">
               <Image
                 src="/gumballmachine1.jpg"
@@ -88,7 +88,7 @@ export function NostalgicSection() {
                 {commonFeatures.map((feature) => (
                   <div key={feature} className="flex items-center">
                     <span className="w-2 h-2 bg-primary rounded-full mr-3" />
-                    <span className="text-gray-600">{feature}</span>
+                    <span className="text-gray-600 dark:text-gray-300">{feature}</span>
                   </div>
                 ))}
               </div>

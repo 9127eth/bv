@@ -26,15 +26,15 @@ const features = [
 
 export function FeatureGrid() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900">
       <div className="container-padding mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-16">Our Features</h2>
+        <h2 className="text-3xl font-bold text-center mb-16 dark:text-white">Our Features</h2>
         <div className="grid grid-cols-2 gap-8">
           {features.map((feature) => (
             <div key={feature.title} className="text-center">
               <feature.icon className="w-12 h-12 mx-auto mb-4 text-primary stroke-current" />
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-xl font-semibold mb-2 dark:text-white">{feature.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300">{feature.description}</p>
             </div>
           ))}
         </div>

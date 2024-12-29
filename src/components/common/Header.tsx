@@ -12,7 +12,7 @@ export function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   return (
-    <header className="bg-white shadow-sm relative">
+    <header className="bg-white dark:bg-gray-800 shadow-sm relative">
       <nav className="container-padding mx-auto flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image

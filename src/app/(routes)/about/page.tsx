@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { generateMetadata } from '../../../lib/metadata'
+import Link from 'next/link'
 
 export const metadata = generateMetadata({
   title: 'About Us',
@@ -28,10 +29,11 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/family-business.jpg"
-                alt="Family Business"
+                src="/beach miami.png"
+                alt="Miami Beach waterfront representing our local service area"
                 fill
                 className="object-cover rounded-lg"
+                priority
               />
             </div>
             <div>
@@ -52,30 +54,36 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-100 dark:bg-gray-800">
         <div className="container-padding mx-auto">
-          <h2 className="text-section-mobile md:text-section font-bold text-center mb-12">
-            Our Commitment to Miami
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-body-large font-semibold mb-4">Local Expertise</h3>
-              <p className="text-body text-gray-600">
-                Deep understanding of Miami's business landscape and community needs, ensuring personalized service.
-              </p>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-section-mobile md:text-section font-bold mb-6 dark:text-white">
+              Ready to Transform Your Space?
+            </h2>
+            <p className="text-body-large text-gray-600 dark:text-gray-300 mb-8">
+              Whether you're looking for cutting-edge smart vending solutions or classic machines, 
+              we have the perfect option for your location. Our solutions include:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
+              <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm">
+                <h3 className="text-body-large font-semibold mb-2 dark:text-white">Smart Vending Machines</h3>
+                <p className="text-body text-gray-600 dark:text-gray-300">
+                  AI-powered, cashless vending for fresh food and drinks
+                </p>
+              </div>
+              <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm">
+                <h3 className="text-body-large font-semibold mb-2 dark:text-white">Candy Machines</h3>
+                <p className="text-body text-gray-600 dark:text-gray-300">
+                  Nostalgic candy and gumball machines
+                </p>
+              </div>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-body-large font-semibold mb-4">Quick Response</h3>
-              <p className="text-body text-gray-600">
-                Based locally, we provide rapid support and maintenance to all our locations along Biscayne Boulevard.
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-body-large font-semibold mb-4">Community First</h3>
-              <p className="text-body text-gray-600">
-                We're not just service providers – we're your neighbors, committed to Miami's growth and success.
-              </p>
-            </div>
+            <Link
+              href="/contact"
+              className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark transition-colors"
+            >
+              Get Started Today
+            </Link>
           </div>
         </div>
       </section>

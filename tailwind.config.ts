@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: 'media',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -14,7 +15,10 @@ const config: Config = {
         'primary-dark': '#0046cc',
       },
       backgroundColor: {
-        'site-background': '#ffffff',
+        'site-background': {
+          light: '#ffffff',
+          dark: '#121212',
+        }
       },
       fontFamily: {
         montserrat: ['var(--font-montserrat)', 'sans-serif'],
@@ -29,6 +33,10 @@ const config: Config = {
         'subsection-mobile': ['1.25rem', { lineHeight: '1.4' }],
         'body': ['1rem', { lineHeight: '1.6' }],
         'body-large': ['1.125rem', { lineHeight: '1.6' }],
+      },
+      textColor: {
+        'dark-primary': '#ffffff',
+        'dark-secondary': '#e0e0e0',
       }
     },
   },

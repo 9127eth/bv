@@ -21,14 +21,14 @@ const products = [
 
 export function ProductGrid() {
   return (
-    <section className="py-24">
+    <section className="py-24 dark:bg-gray-900">
       <div className="container-padding mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-16">Our Product Types</h2>
+        <h2 className="text-3xl font-bold text-center mb-16 dark:text-white">Our Product Types</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product) => (
             <div 
               key={product.title} 
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
             >
               <div className="relative h-48">
                 <Image
@@ -39,8 +39,8 @@ export function ProductGrid() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{product.title}</h3>
-                <p className="text-gray-600">{product.description}</p>
+                <h3 className="text-xl font-semibold mb-2 dark:text-white">{product.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{product.description}</p>
               </div>
             </div>
           ))}
