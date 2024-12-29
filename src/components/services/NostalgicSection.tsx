@@ -57,12 +57,12 @@ export function NostalgicSection() {
             <div className="space-y-8">
               {productCategories.map((category) => (
                 <div key={category.title}>
-                  <h3 className="text-xl font-semibold mb-4">{category.title}</h3>
+                  <h3 className="text-xl font-semibold mb-4 dark:text-white">{category.title}</h3>
                   <div className="grid grid-cols-2 gap-3">
                     {category.items.map((item) => (
                       <div key={item} className="flex items-center">
                         <span className="w-2 h-2 bg-primary rounded-full mr-3" />
-                        <span className="text-gray-600 text-sm">{item}</span>
+                        <span className="text-gray-600 dark:text-gray-300 text-sm">{item}</span>
                       </div>
                     ))}
                   </div>

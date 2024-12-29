@@ -22,26 +22,26 @@ export function ClassicsSection() {
             />
           </div>
           <div>
-            <h2 className="text-section-mobile md:text-section font-bold mb-6 dark:text-white">
+            <h2 className="text-section-mobile md:text-section font-bold mb-6">
               We Love Classics Too!
             </h2>
-            <p className="text-body-large text-gray-600 dark:text-gray-300 mb-6">
+            <p className="text-body-large text-gray-600 mb-6">
               Experience the timeless charm of traditional vending. Our classic machines 
               bring joy and nostalgia to any space while providing reliable service 
               and steady revenue.
             </p>
-            <p className="text-body text-gray-600 dark:text-gray-300 mb-8">
+            <p className="text-body text-gray-600 mb-8">
               Perfect for retail stores, family restaurants, entertainment venues, 
               and anywhere looking to add a touch of fun and nostalgia.
             </p>
-            <p className="text-body-large font-semibold mb-3 dark:text-white">
+            <p className="text-body-large font-semibold mb-3">
               Available Product Categories:
             </p>
             <div className="space-y-2">
               {vendingCategories.map((category) => (
                 <div key={category} className="flex items-center">
                   <span className="w-2 h-2 bg-primary rounded-full mr-3" />
-                  <span className="text-body text-gray-600 dark:text-gray-300">{category}</span>
+                  <span className="text-body text-gray-600">{category}</span>
                 </div>
               ))}
             </div>
