@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X } from 'react-feather'
@@ -8,6 +8,19 @@ import { siteMetadata } from '../../lib/metadata'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
+  useEffect(() => {
+    // Check if dark mode is enabled
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    setIsDarkMode(darkModeMediaQuery.matches)
+
+    // Listen for changes in system dark mode preference
+    const listener = (e: MediaQueryListEvent) => setIsDarkMode(e.matches)
+    darkModeMediaQuery.addEventListener('change', listener)
+
+    return () => darkModeMediaQuery.removeEventListener('change', listener)
+  }, [])
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
@@ -16,7 +29,7 @@ export function Header() {
       <nav className="container-padding mx-auto flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
-            src="/newlogo.png"
+            src={isDarkMode ? "/whitelogo.png" : "/newlogo.png"}
             alt={siteMetadata.siteName}
             width={350}
             height={77}

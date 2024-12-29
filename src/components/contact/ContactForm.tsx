@@ -38,14 +38,14 @@ export function ContactForm() {
   return (
     <div className="grid md:grid-cols-2 gap-8">
       <div className="bg-gray-100 dark:bg-gray-800 rounded-3xl p-8 md:p-12">
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-600 dark:text-gray-300 mb-8">
           Fill out the form below and we'll get back to you as soon as possible.
         </p>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label 
               htmlFor="name" 
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
             >
               Name
             </label>
@@ -62,7 +62,7 @@ export function ContactForm() {
           <div>
             <label 
               htmlFor="business" 
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
             >
               Business Name
             </label>
@@ -79,7 +79,7 @@ export function ContactForm() {
           <div>
             <label 
               htmlFor="email" 
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
             >
               Email
             </label>
@@ -96,7 +96,7 @@ export function ContactForm() {
           <div>
             <label 
               htmlFor="message" 
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
             >
               Message
             </label>
@@ -121,30 +121,30 @@ export function ContactForm() {
       </div>
 
       <div className="space-y-8">
-        <div className="bg-gray-100 rounded-3xl p-8">
-          <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+        <div className="bg-gray-100 dark:bg-gray-800 rounded-3xl p-8">
+          <h2 className="text-2xl font-bold mb-6 dark:text-white">Contact Information</h2>
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <Mail className="text-primary w-5 h-5" />
-              <a href={`mailto:${contactInfo.email}`} className="text-gray-600 hover:text-primary">
+              <a href={`mailto:${contactInfo.email}`} className="text-gray-600 dark:text-gray-300 hover:text-primary">
                 {contactInfo.email}
               </a>
             </div>
             <div className="flex items-center gap-3">
               <Phone className="text-primary w-5 h-5" />
-              <a href={`tel:${contactInfo.phone}`} className="text-gray-600 hover:text-primary">
+              <a href={`tel:${contactInfo.phone}`} className="text-gray-600 dark:text-gray-300 hover:text-primary">
                 {contactInfo.phone}
               </a>
             </div>
           </div>
         </div>
 
-        <div className="bg-gray-100 rounded-3xl p-8">
-          <h2 className="text-2xl font-bold mb-6">Service Area</h2>
+        <div className="bg-gray-100 dark:bg-gray-800 rounded-3xl p-8">
+          <h2 className="text-2xl font-bold mb-6 dark:text-white">Service Area</h2>
           <div className="space-y-4">
             <div className="flex gap-3">
               <MapPin className="text-primary w-5 h-5 flex-shrink-0" />
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-300">
                 {contactInfo.serviceArea}
               </p>
             </div>
