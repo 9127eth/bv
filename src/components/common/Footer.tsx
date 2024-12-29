@@ -42,8 +42,8 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-xl font-bold mb-4 pl-4">Quick Links</h3>
+            <ul className="space-y-2 pl-4">
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <Link 
@@ -59,8 +59,8 @@ export function Footer() {
 
           {/* Social Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
+            <h3 className="text-xl font-bold mb-4 pl-4">Follow Us</h3>
+            <div className="flex space-x-4 pl-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
