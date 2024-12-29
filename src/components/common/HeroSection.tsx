@@ -11,8 +11,11 @@ export function HeroSection() {
             <h1 className="text-hero-mobile md:text-hero font-bold mb-6">
               AI-Powered Smart Vending Machines
             </h1>
-            <p className="text-body-large mb-8">
+            <p className="text-body-large mb-4">
               Experience the future of vending with our AI-enabled smart vending machines. Tap, take, and go - no maintenance, no hassle.
+            </p>
+            <p className="text-body text-white/90 mb-8">
+              Serving South Florida from Downtown Miami to Aventura, including Biscayne Boulevard corridor and surrounding areas.
             </p>
             <Link 
               href="/services" 

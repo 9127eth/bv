@@ -22,11 +22,11 @@ const steps = [
 
 const benefits = [
   'Low maintenance compared to traditional vending machines',
+  'Stock fresh meals, drinks, and items traditional machines can\'t handle',
+  'A more modern user experience compared to traditional vending machines',
   'Real-time inventory tracking to minimize out-of-stock items',
   'Contactless payments for seamless transactions',
   'Compact footprint maximizes space efficiency',
-  'Stock fresh meals, drinks, and items traditional machines can\'t handle',
-  'A more modern user experience compared to traditional vending machines',
 ]
 
 export function SmartCoolerSection() {
@@ -76,11 +76,11 @@ export function SmartCoolerSection() {
 
         <div className="max-w-6xl mx-auto">
           <h3 className="text-subsection-mobile md:text-subsection font-semibold mb-8 text-center">Smart Vending Benefits</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
             {benefits.map((benefit) => (
               <div 
                 key={benefit} 
-                className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm"
+                className="flex items-center gap-3"
               >
                 <Check className="text-primary w-5 h-5 flex-shrink-0" />
                 <span className="text-body text-gray-600">{benefit}</span>
