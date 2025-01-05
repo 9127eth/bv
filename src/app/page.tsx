@@ -5,6 +5,7 @@ import { FeatureGrid } from '../components/common/FeatureGrid'
 import { WhyChooseUs } from '../components/common/WhyChooseUs'
 import { CTASection } from '../components/common/CTASection'
 import { ClassicsSection } from '../components/common/ClassicsSection'
+import { HomeClawSection } from '../components/common/HomeClawSection'
 
 export const metadata = generateMetadata({
   title: 'Home',
@@ -18,6 +19,7 @@ export default function HomePage() {
       <FeatureGrid />
       <WhyChooseUs />
       <ClassicsSection />
+      <HomeClawSection />
       <CTASection />
     </>
   )
