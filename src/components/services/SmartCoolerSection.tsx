@@ -94,7 +94,7 @@ export function SmartCoolerSection() {
               href="/contact" 
               className="inline-block bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-primary/90 transition-colors"
             >
-              Get Started with Smart Vednding
+              Get Started with Smart Vending
             </a>
           </div>
         </div>

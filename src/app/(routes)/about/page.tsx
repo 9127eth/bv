@@ -2,15 +2,18 @@ import React from 'react'
 import Image from 'next/image'
 import { generateMetadata } from '../../../lib/metadata'
 import Link from 'next/link'
+import { BreadcrumbSchema } from '../../../components/common/BreadcrumbSchema'
 
 export const metadata = generateMetadata({
-  title: 'About Us',
-  description: 'Family-owned vending services in Miami, serving businesses along Biscayne Boulevard with state-of-the-art solutions.'
+  title: 'About Us - Family-Owned Miami Vending Company',
+  description: 'Miami\'s trusted family-owned vending company specializing in AI-powered smart vending machines. Serving Biscayne Boulevard, Brickell, Miami Beach, and Aventura with innovative vending solutions since our founding.',
+  canonicalUrl: 'https://biscaynevending.com/about'
 })
 
 export default function AboutPage() {
   return (
     <>
+      <BreadcrumbSchema items={[{ name: 'About Us', path: '/about' }]} />
       <section className="bg-primary py-20">
         <div className="container-padding mx-auto">
           <div className="max-w-2xl text-white pl-4 md:pl-8 lg:pl-12">

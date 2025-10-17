@@ -19,19 +19,23 @@ const poppins = Poppins({
   variable: '--font-poppins',
 })
 
+export const viewport = {
+  themeColor: '#0057ff',
+}
+
 export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
     default: siteMetadata.title,
-    template: `%s | ${siteMetadata.title}`,
+    template: `%s | Biscayne Vending`,
   },
   description: siteMetadata.description,
   keywords: siteMetadata.keywords,
   authors: siteMetadata.authors,
   creator: siteMetadata.creator,
-  themeColor: siteMetadata.themeColor,
   alternates: siteMetadata.alternates,
   manifest: '/manifest.json',
+  category: 'business',
   robots: {
     index: true,
     follow: true,
@@ -42,6 +46,29 @@ export const metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: siteMetadata.siteUrl,
+    siteName: siteMetadata.siteName,
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    images: [
+      {
+        url: `${siteMetadata.siteUrl}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Biscayne Vending - AI-Powered Smart Vending Machines',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    creator: siteMetadata.twitterHandle,
+    images: [`${siteMetadata.siteUrl}/og-image.png`],
   },
 }
 

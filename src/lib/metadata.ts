@@ -1,6 +1,6 @@
 export const siteMetadata = {
-  title: 'Biscayne Vending',
-  description: 'Professional vending machine services in the Biscayne area. Quality refreshments and snacks for your business.',
+  title: 'Biscayne Vending - AI-Powered Smart Vending Machines in Miami',
+  description: 'Leading AI-powered smart vending machine provider in Miami, FL. Serving Biscayne Boulevard, Downtown Miami to Aventura with contactless, intelligent vending solutions. Free installation, no maintenance.',
   siteUrl: 'https://biscaynevending.com',
   siteName: 'Biscayne Vending',
   twitterHandle: '@BiscayneVending',
@@ -10,19 +10,31 @@ export const siteMetadata = {
     url: 'https://biscaynevending.com',
   }],
   keywords: [
-    'vending machines',
-    'smart vending',
-    'Miami vending services',
-    'Biscayne vending',
-    'AI vending machines',
-    'commercial vending solutions',
-    'Florida vending services',
-    'candy machines',
-    'snack vending',
-    'miami vending',
-    'miami vending solutions',
-    'miami',
-    'business vending solutions'
+    'AI vending machines Miami',
+    'smart vending machines Miami',
+    'AI-powered vending machines',
+    'intelligent vending solutions',
+    'contactless vending machines Miami',
+    'Miami vending machine services',
+    'Biscayne Boulevard vending',
+    'South Florida vending machines',
+    'smart cooler vending Miami',
+    'automated vending machines',
+    'cashless vending machines',
+    'Miami Beach vending',
+    'Downtown Miami vending',
+    'Aventura vending machines',
+    'Brickell vending services',
+    'Florida AI vending',
+    'touchless vending machines',
+    'modern vending solutions Miami',
+    'commercial vending Miami',
+    'office vending machines Miami',
+    'candy machines Miami',
+    'gumball machines Miami',
+    'claw machines Miami',
+    'vending machine installation Miami',
+    'free vending machine placement'
   ],
   creator: 'Biscayne Vending',
   themeColor: '#0057ff',
@@ -44,14 +56,20 @@ export function generateMetadata({
   canonicalUrl,
   image = '/og-image.png', // Set default OG image
 }: MetadataProps = {}) {
+  const fullTitle = title || siteMetadata.title
+  const fullDescription = description || siteMetadata.description
+  const fullCanonical = canonicalUrl || siteMetadata.siteUrl
+  
   return {
-    title: title ? `${title} | ${siteMetadata.title}` : siteMetadata.title,
-    description: description || siteMetadata.description,
-    canonical: canonicalUrl || siteMetadata.siteUrl,
+    title: fullTitle,
+    description: fullDescription,
+    alternates: {
+      canonical: fullCanonical,
+    },
     openGraph: {
-      title: title || siteMetadata.title,
-      description: description || siteMetadata.description,
-      url: canonicalUrl || siteMetadata.siteUrl,
+      title: fullTitle,
+      description: fullDescription,
+      url: fullCanonical,
       siteName: siteMetadata.siteName,
       locale: siteMetadata.locale,
       type: 'website',
@@ -60,16 +78,19 @@ export function generateMetadata({
           url: image,
           width: 1200,
           height: 630,
-          alt: title || siteMetadata.title,
+          alt: fullTitle,
         }
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: title || siteMetadata.title,
-      description: description || siteMetadata.description,
+      title: fullTitle,
+      description: fullDescription,
       creator: siteMetadata.twitterHandle,
       images: [image],
+    },
+    verification: {
+      google: 'your-google-site-verification-code',
     },
   }
 } 

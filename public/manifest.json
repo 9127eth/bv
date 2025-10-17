@@ -1,0 +1,29 @@
+{
+  "name": "Biscayne Vending - AI-Powered Smart Vending Machines in Miami",
+  "short_name": "Biscayne Vending",
+  "description": "Leading AI-powered smart vending machine provider in Miami, FL. Serving Biscayne Boulevard, Downtown Miami to Aventura with contactless, intelligent vending solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0057ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "services"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7"
+}
