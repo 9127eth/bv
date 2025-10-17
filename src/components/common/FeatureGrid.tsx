@@ -8,7 +8,7 @@ const features = [
     icon: Box,
   },
   {
-    title: 'Minimal Maintenance',
+    title: 'Reliable',
     description: 'No moving parts to replace, fewer breakdowns, and less servicing',
     icon: Tool,
   },

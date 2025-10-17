@@ -9,7 +9,7 @@ const reasons = [
   },
   {
     title: 'Low Maintenance Focus',
-    description: 'Our smart vending solutions are designed for minimal maintenance and maximum reliability.',
+    description: 'Our smart vending solutions are designed to be reliable with maximum uptime.',
     icon: Tool,
   },
   {

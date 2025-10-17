@@ -32,7 +32,7 @@ const nextConfig = {
           },
           {
             key: 'Referrer-Policy',
-            value: 'strict-origin-when-cross-origin',
+            value: 'no-referrer-when-downgrade',
           },
           {
             key: 'Permissions-Policy',

@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     question: 'What makes your smart vending machines different from traditional ones?',
-    answer: 'Our smart vending machines feature AI technology, real-time inventory tracking, contactless payments, and the ability to stock a wider variety of items. They also provide valuable analytics and require minimal maintenance compared to traditional machines due to minimal moving parts.'
+    answer: 'Our smart vending machines feature AI technology, real-time inventory tracking, contactless payments, and the ability to stock a wider variety of items. They also provide valuable analytics and are highly reliable compared to traditional machines due to fewer moving parts.'
   }
 ]
 

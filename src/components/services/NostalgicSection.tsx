@@ -51,7 +51,7 @@ export function NostalgicSection() {
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-12">
               Add a touch of nostalgia to your location with our classic vending machines. 
               These time-tested favorites combine durability with simple operation, 
-              generating steady revenue with minimal maintenance.
+              generating steady revenue with reliable performance.
             </p>
 
             <div className="space-y-8">
